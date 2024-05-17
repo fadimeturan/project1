@@ -1,0 +1,26 @@
+genre,book,author,shelf
+
+philosophy,thoughts,marcus airelius,1.shelf
+
+GENRE NOT FOUND,fahrenheit,ray bradbury,2.shelf
+
+sociology,thinking sociological,zygmunt bauman,3.shelf
+
+science,kozmos,carl sagan,3.shelf
+
+philosophy,ecce homo,nietzsche,3.shelf
+
+science,incognito,adam,3.shelf
+
+psychology,atomic habits,adam,4.shelf
+
+psychology,schema therapy,jeffrey young,5.shelf
+
+psychology,body keep secrets,van der kok,5.shelf
+
+fiction,pride and prejudice,jane austen,5.shelf
+
+fiction,lotr,g.r.r martin,5.shelf
+
+GENRE NOT FOUND,the republic,platon,NOT AN INTEGER
+
