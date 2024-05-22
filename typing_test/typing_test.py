@@ -2,7 +2,25 @@ import curses
 from curses import wrapper
 import time
 
+def main(std_screen):
+    curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_BLACK)
+    curses.init_pair(2, curses.COLOR_BLUE, curses.COLOR_BLACK)    
+    curses.init_pair(3, curses.COLOR_RED, curses.COLOR_BLACK)
+    
 
+    start_screen(std_screen)
+
+    while True:
+        
+        main_time= time_test(std_screen)
+        std_screen.clear()
+        std_screen.addstr(2, 0, f"Congrats! You completed the text in {main_time:.2f} seconds! Press any key to start again!", curses.A_BOLD)
+        std_screen.refresh()
+        key= std_screen.getkey()
+        
+        if ord(key)==27:
+            break
+            
 def start_screen(std_screen):
     std_screen.clear()
     std_screen.addstr("Welcome to the Speed Typing Test!!")
@@ -59,25 +77,6 @@ def time_test(std_screen):
         
     
     return main_time
-
-def main(std_screen):
-    curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_BLACK)
-    curses.init_pair(2, curses.COLOR_BLUE, curses.COLOR_BLACK)    
-    curses.init_pair(3, curses.COLOR_RED, curses.COLOR_BLACK)
-    
-
-    start_screen(std_screen)
-
-    while True:
-        
-        main_time= time_test(std_screen)
-        std_screen.clear()
-        std_screen.addstr(2, 0, f"Congrats! You completed the text in {main_time:.2f} seconds! Press any key to start again!", curses.A_BOLD)
-        std_screen.refresh()
-        key= std_screen.getkey()
-        
-        if ord(key)==27:
-            break
 
 if __name__ == "__main__":
     wrapper(main)
