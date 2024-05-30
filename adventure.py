@@ -1,3 +1,4 @@
+#just for fun
 
 name= input("What is your name? ")
 print(f"Welcome {name}! Let's start!")
