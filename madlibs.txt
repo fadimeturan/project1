@@ -1,0 +1,4 @@
+Once upon a time, a <adjective1> <animal> lived in a <place>. It was a <adjective2> place, and the <animal> felt <emotion>. 
+One day, it decided to <action> to find some <food>. On the way, it met a <adjective3> <person>. 
+They both went to the <place2> to search for <food2>. After a while, they found a <adjective4> <object>. 
+They both felt <emotion2> and decided to <action2>. In the end, they returned home feeling <emotion3>.
