@@ -10,8 +10,6 @@ def save_data(filepath, data):
     with open(filepath, "w") as file:
         json.dump(data, file)
 
-#save_item("test.json", {"key": "value"})
-
 def load_data(filepath):
     try:
         with open(filepath, "r") as file:
@@ -46,7 +44,3 @@ if len(sys.argv) == 2:
         print("unknown command")
 else:
     print("one command only")
-
-#lili mary
-#C:\Users\HP\Desktop\python_projects.py\code_projects\clip_board.py
-#C:\Users\HP\Desktop\python_projects.py\code_projects\clip_board.py
